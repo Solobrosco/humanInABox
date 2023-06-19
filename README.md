@@ -30,7 +30,7 @@ A progressive web application using vite and Github Pages.
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Solobrosco/humanInABox.git
 
 2. Navigate to the project directory::
 
