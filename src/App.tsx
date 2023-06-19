@@ -1,17 +1,21 @@
 import './App.css'
 import styled, { keyframes } from 'styled-components'
+// import DVDLoading from './components/DvdLoading'
+// import Loading from './components/Loading'
+// import Login from './pages/Login'
 
 function App() {
   return (
     <div>
       <Spinner></Spinner>
       <h1>Failed successfully</h1>
+      {/* <button onSubmit={Login}>Login</button>
+      <Loading></Loading> */}
     </div>
   )
 }
 
 export default App
-
 const AnimateSpin = keyframes`
   0% {
     transform: rotate(0deg);
