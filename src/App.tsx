@@ -1,16 +1,21 @@
-import './App.css'
-import Spinner from './components/Spinner'
+import { Routes, Route, BrowserRouter } from "react-router-dom"
 
+// import Spinner from './components/Spinner'
 // import Login from './pages/Login'
 // import DVDLoading from './components/DvdLoading'
+import Landing from "./pages/Landing"
+// import Login from './pages/Login'
+
+import './App.css'
+
 
 function App() {
   return (
-    <div>
-      <h1>Failed successfully</h1>
-      <Spinner />
-      {/* <button onSubmit={Login}>Login</button> */}
-    </div>
+      // <Routes>
+      //   <Route path="/" element={ <Landing /> } />
+      //   <Route path="/login" element={ <Login /> } />
+      // </Routes>
+      <Landing />
   )
 }
 
