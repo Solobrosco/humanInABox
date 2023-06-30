@@ -35,7 +35,7 @@ A progressive web application using vite and Github Pages.
 2. Navigate to the project directory::
 
    ```bash
-   git cd project-directory
+   cd project-directory
 
 3. Install dependencies:
 
