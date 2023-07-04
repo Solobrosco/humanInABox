@@ -1,6 +1,10 @@
 import { keyframes, styled } from "styled-components"
+import { updateTitle } from "../utils/generalFunctions"
+
+const TITLE = 'Login User'
 
 const Login = () => {
+  updateTitle(TITLE)
     // const [data, setData] = useState({
     //     email: "",
     //     password: ""
