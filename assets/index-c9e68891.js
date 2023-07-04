@@ -108,18 +108,18 @@ Error generating stack: `+l.message+`
   &:focus, &:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
-`;const hy=()=>ye.jsx("div",{children:ye.jsx(vy,{children:ye.jsxs(gy,{children:[ye.jsx(sf,{type:"email",name:"email"}),ye.jsx(sf,{type:"password",name:"password"}),ye.jsx(yy,{children:"Submit"})]})})}),my=Kp`
+`;const hy=e=>document.title=e,my="Login User",vy=()=>(hy(my),ye.jsx("div",{children:ye.jsx(yy,{children:ye.jsxs(wy,{children:[ye.jsx(sf,{type:"email",name:"email"}),ye.jsx(sf,{type:"password",name:"password"}),ye.jsx(Sy,{children:"Submit"})]})})})),gy=Kp`
   from{
     transform: translateY(0)
   }
   to{
     transform: translateY(-3px)
   }
-`,vy=vn.div`
+`,yy=vn.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-`,gy=vn.form`
+`,wy=vn.form`
   width: 100%;
   max-width: 414px;
   padding: 1.3rem;
@@ -141,7 +141,7 @@ Error generating stack: `+l.message+`
   &:hover {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.15), 0 1px 5px rgba(0, 0, 0, 0.1);
   }
-`,yy=vn.button`
+`,Sy=vn.button`
   max-width: 100%;
   padding: 11px 13px;
   color: rgb(253, 249, 243);
@@ -157,7 +157,7 @@ Error generating stack: `+l.message+`
   transition: all 0.3s ease;
   &:hover {
     background: rgb(200, 50, 70);
-    animation: ${my} 0.2s ease-out forwards;
+    animation: ${gy} 0.2s ease-out forwards;
     color: rgb(225, 186, 127);
   }
-`,wy=ly([{path:"humanInABox/",element:ye.jsx(dy,{})},{path:"humanInABox/login",element:ye.jsx(hy,{})}]),Sy=uu.createRoot(document.getElementById("root"));Sy.render(ye.jsx(Jg,{router:wy}));
+`,ky=ly([{path:"humanInABox/",element:ye.jsx(dy,{})},{path:"humanInABox/login",element:ye.jsx(vy,{})}]),Ey=uu.createRoot(document.getElementById("root"));Ey.render(ye.jsx(Jg,{router:ky}));
