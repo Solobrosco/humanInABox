@@ -35,12 +35,12 @@ A progressive web application using vite and Github Pages.
 2. Navigate to the project directory::
 
    ```bash
-   cd project-directory
+   cd humanInABox
 
 3. Install dependencies:
 
    ```bash
-   npm run dev
+   npm install
 
 ### Development
 
