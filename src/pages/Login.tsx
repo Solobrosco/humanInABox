@@ -19,18 +19,24 @@ const Login = () => {
     //   };
     return(
         <div>
+            <h1>Hello!</h1>
             <Container>
                 <Form>
-                    <Input
-                        type="email"
-                        name="email"
-                    />
-                    <Input
-                        type="password"
-                        name="password"
-                    />
-                    <Button>Submit</Button>
+                  <Input
+                      type="email"
+                      name="email"
+                      placeholder="email"
+                  />
+                  <Input
+                      type="password"
+                      name="password"
+                      placeholder="password"
+                  />
+                  <Button>Submit</Button>
                 </Form>
+                <Wrapper>Don't have and account? 
+                  <a href="#"> Signup here</a>
+                </Wrapper>
             </Container>
         </div>
     )
@@ -40,17 +46,22 @@ export default Login
 
 const jump = keyframes`
   from{
-    transform: translateY(0)
+    transform: scale(1.0)
   }
   to{
-    transform: translateY(-3px)
+    transform: scale(1.03)
   }
 `
 
+const Wrapper = styled.div`
+  font-size: smaller;
+  font-weight: lighter;
+`
+
 const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 const Form = styled.form`
@@ -95,8 +106,8 @@ const Button = styled.button`
   transition: all 0.3s ease;
   &:hover {
     background: rgb(200, 50, 70);
-    animation: ${jump} 0.2s ease-out forwards;
-    color: rgb(225, 186, 127);
+    animation: ${jump} 0.1s ease-in-out forwards;
+    color: rgb(160, 33, 33);
   }
 `
 // https://codesandbox.io/s/dpc39?file=/src/index.js:150-258
