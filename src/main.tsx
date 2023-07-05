@@ -1,9 +1,10 @@
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
 import Login from './pages/Login.tsx'
+import App from './App.tsx'
+
+import './index.css'
 
 const router = createBrowserRouter ([
   {
