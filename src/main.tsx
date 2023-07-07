@@ -1,8 +1,9 @@
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import Login from './pages/Login.tsx'
 import App from './App.tsx'
+import Login from './pages/Login.tsx'
+import Splash from './pages/Splash.tsx'
 
 import './index.css'
 
@@ -14,6 +15,10 @@ const router = createBrowserRouter ([
   {
     path: 'humanInABox/login',
     element: <Login />
+  },
+  {
+    path: 'humanInABox/splash',
+    element: <Splash />
   },
 ])
 

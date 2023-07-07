@@ -1,11 +1,11 @@
 import styled, { keyframes } from 'styled-components'
 
 const Spinner = () =>{
-    return(
-        <Container>
-          <Spin/>
-        </Container>
-    )
+  return(
+    <Container>
+      <Spin/>
+    </Container>
+  )
 }
 
 export default Spinner
@@ -20,18 +20,21 @@ const AnimateSpin = keyframes`
 `;
 
 const Container = styled.div`
-    padding: 1em;
+  padding: 1em;
 `
 
 const Spin = styled.div`
-    display: inline-block;
-    height: 2em;
-    width: 3em;
-    border: 10px solid;
-    border-top-color: #4d2aff;
-    border-bottom-color: #ff462a;
-    border-left-color: #2aff5c;
-    border-right-color: #fff82a;
-    border-radius: 50%;
-    animation: ${AnimateSpin} 0.00002s linear infinite;
+  display: inline-block;
+  height: 2em;
+  width: 3em;
+  border: 10px solid;
+  border-top-color: #4d2aff;
+  border-bottom-color: #ff462a;
+  border-left-color: #2aff5c;
+  border-right-color: #fff82a;
+  border-radius: 50%;
+  animation: ${AnimateSpin} 0.00002s linear infinite;
+  &:hover {
+  box-shadow: 0 0 3px rgba(252, 244, 140, 0.764), 0 1px 5px rgba(0, 0, 0, 0.1);
+}
 `;
