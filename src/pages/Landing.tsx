@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { keyframes, styled } from "styled-components"
 import Spinner from "../components/Spinner"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { updateTitle } from "../utils/generalFunctions"
 
 const TITLE = "Error: 418"
@@ -9,10 +9,21 @@ const TITLE = "Error: 418"
 const Landing = () => {
   updateTitle(TITLE)
   const [button, setButton] = useState<boolean>(false)
+  const [isVisible, setisVisible] = useState<boolean>(false)
 
   const handleClick = () => {
     setButton(true)
   }
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setisVisible(true);
+    }, 9000); // Set the desired delay in milliseconds (e.g., 3000 for 3 seconds)
+
+    return () => {
+      clearTimeout(timer); // Clear the timeout if the component unmounts before the delay
+    };
+  }, []);
 
   return(
     <div>
@@ -22,11 +33,16 @@ const Landing = () => {
         </Container>
         {button && (
           <Link to = {'login/'}>
-              <Button>
-                  Login
-              </Button>
+            <Button>
+              Login
+            </Button>
           </Link>
         )}
+        <Link to = {'splash/'}>
+          <Button style={{ display: isVisible ? 'block' : 'none' }}>
+            Splash
+          </Button>
+        </Link>
     </div>
   )
 }
