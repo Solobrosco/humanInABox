@@ -13,17 +13,20 @@ A static web space for infomation and demos.
 
 ## About
 
-A progressive web application using vite and Github Pages.
+A progressive web application using Vite and Github Pages.
 
 ## Features
 
-- List key features or functionalities of your project.
+- React Typescript
+- Styled Components
 
 ## Getting Started
 
 ### Prerequisites
 
-- List any prerequisites or requirements that users need to have before getting started.
+- git
+- node
+- npm
 
 ### Installation
 
@@ -62,7 +65,7 @@ The built files will be placed in the dist directory.
 
 ### Usage
 
-Provide any instructions or examples on how to use your project. Include relevant code snippets or screenshots to demonstrate its usage.
+Use these features for your project. 
 
 ### Contributing
 
