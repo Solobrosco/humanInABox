@@ -38,11 +38,14 @@ const Landing = () => {
   }, []);
 
   return(
-    <div>
+    <Container>
+
       <h1>Oops...<br/> something went wrong</h1>
-      <Container onClick={handleClick}>
+
+      <Grow onClick={handleClick}>
         <Spinner />
-      </Container>
+      </Grow>
+
       {button && (
         <Link to = {'login/'}>
           <Button>
@@ -50,12 +53,13 @@ const Landing = () => {
           </Button>
         </Link>
       )}
+
       <Link to = {'splash/'}>
         <Button style={{ display: isVisible ? 'block' : 'none' }}>
           Splash
         </Button>
       </Link>
-    </div>
+    </Container>
   )
 }
 
@@ -93,6 +97,10 @@ const Button = styled.div`
 `
 
 const Container = styled.div`
+  padding: 5rem;
+`
+
+const Grow = styled.div`
   &:hover {
     animation: ${jump} 0.3s ease-in-out forwards;
   }

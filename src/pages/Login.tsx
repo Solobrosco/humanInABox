@@ -19,9 +19,8 @@ const Login = () => {
     //     setData(Object.assign(data, { [name]: value }));
     //   };
   return(
-    <div>
+    <Container>
       <h1>Hello!</h1>
-      <Container>
         <Form>
           <Input
             type="email"
@@ -38,8 +37,7 @@ const Login = () => {
         <Wrapper>Don't have and account? 
           <a href="#"> Signup here</a>
         </Wrapper>
-      </Container>
-    </div>
+    </Container>
   )
 }
 
@@ -63,6 +61,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5rem;
 `
 
 const Form = styled.form`
