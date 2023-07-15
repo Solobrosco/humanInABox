@@ -1,12 +1,14 @@
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
+// import pages
 import App from './App.tsx'
 import Login from './pages/Login.tsx'
 import Splash from './pages/Splash.tsx'
 
 import './index.css'
 
+// Router
 const router = createBrowserRouter ([
   {
     path: 'humanInABox/',

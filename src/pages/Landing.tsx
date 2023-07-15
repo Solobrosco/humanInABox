@@ -1,20 +1,32 @@
-import { Link } from "react-router-dom"
+// React Typescript
 import { keyframes, styled } from "styled-components"
-import Spinner from "../components/Spinner"
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
+
+// Functions
 import { updateTitle } from "../utils/generalFunctions"
 
+// Components
+import Spinner from "../components/Spinner"
+
+// Constants
 const TITLE = "Error: 418"
 
+// Fake Error page with hidden links 
 const Landing = () => {
+  // Displaying Error 418 on Tab Title
   updateTitle(TITLE)
+  // login button state
   const [button, setButton] = useState<boolean>(false)
+  // splashpage button state
   const [isVisible, setisVisible] = useState<boolean>(false)
 
+  // Displays a button to the login page
   const handleClick = () => {
     setButton(true)
   }
 
+  // Delayed button load for splashpage
   useEffect(() => {
     const timer = setTimeout(() => {
       setisVisible(true);
@@ -27,22 +39,22 @@ const Landing = () => {
 
   return(
     <div>
-        <h1>Oops...<br/> something went wrong</h1>
-        <Container onClick={handleClick}>
-          <Spinner />
-        </Container>
-        {button && (
-          <Link to = {'login/'}>
-            <Button>
-              Login
-            </Button>
-          </Link>
-        )}
-        <Link to = {'splash/'}>
-          <Button style={{ display: isVisible ? 'block' : 'none' }}>
-            Splash
+      <h1>Oops...<br/> something went wrong</h1>
+      <Container onClick={handleClick}>
+        <Spinner />
+      </Container>
+      {button && (
+        <Link to = {'login/'}>
+          <Button>
+            Login
           </Button>
         </Link>
+      )}
+      <Link to = {'splash/'}>
+        <Button style={{ display: isVisible ? 'block' : 'none' }}>
+          Splash
+        </Button>
+      </Link>
     </div>
   )
 }
@@ -81,8 +93,6 @@ const Button = styled.div`
 `
 
 const Container = styled.div`
-  /* transition: transform 750ms;
-  will-change: transform; */
   &:hover {
     animation: ${jump} 0.3s ease-in-out forwards;
   }

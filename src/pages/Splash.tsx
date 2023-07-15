@@ -1,34 +1,36 @@
 import { styled } from "styled-components";
+
 import background from '../assets/Yosemite_2.jpg'
 
+import { updateTitle } from "../utils/generalFunctions";
+
 import Quote from "../components/Quote";
+
+const TITLE = "NAS"
 
 const Splash = () => {
   let greeting = "Hello World!"
   let author = "Nikko Solon"
+  updateTitle(TITLE)
   return(
     <>
-    <FullScreenImage>
+      <FullScreenImage>
         <Image src={background} alt="Yosemite View" />
         <TextOverlay>
           <Quote quote={greeting} author={author}></Quote>
         </TextOverlay>
-    </FullScreenImage>
-    <Container>
-      <h2>Contact</h2>
-    </Container>
-    {/* // background section
-    // title quote
-    // contacts */}
+      </FullScreenImage>
+      <Container>
+        <h2>Contact</h2>
+      </Container>
+      {/* // background section
+      // title quote
+      // contacts */}
     </>
   )
 }
 
 export default Splash
-
-const QuoteComponent = styled.div`
-  
-`
 
 const TextOverlay = styled.div`
   text-align: center;

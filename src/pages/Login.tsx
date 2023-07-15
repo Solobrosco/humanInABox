@@ -1,4 +1,5 @@
 import { keyframes, styled } from "styled-components"
+
 import { updateTitle } from "../utils/generalFunctions"
 
 const TITLE = 'Login User'
@@ -17,29 +18,29 @@ const Login = () => {
     //     const { name, value } = e.target;
     //     setData(Object.assign(data, { [name]: value }));
     //   };
-    return(
-        <div>
-            <h1>Hello!</h1>
-            <Container>
-                <Form>
-                  <Input
-                      type="email"
-                      name="email"
-                      placeholder="email"
-                  />
-                  <Input
-                      type="password"
-                      name="password"
-                      placeholder="password"
-                  />
-                  <Button>Submit</Button>
-                </Form>
-                <Wrapper>Don't have and account? 
-                  <a href="#"> Signup here</a>
-                </Wrapper>
-            </Container>
-        </div>
-    )
+  return(
+    <div>
+      <h1>Hello!</h1>
+      <Container>
+        <Form>
+          <Input
+            type="email"
+            name="email"
+            placeholder="email"
+          />
+          <Input
+            type="password"
+            name="password"
+            placeholder="password"
+          />
+          <Button>Submit</Button>
+        </Form>
+        <Wrapper>Don't have and account? 
+          <a href="#"> Signup here</a>
+        </Wrapper>
+      </Container>
+    </div>
+  )
 }
 
 export default Login
