@@ -21,6 +21,9 @@ const Splash = () => {
         </TextOverlay>
       </FullScreenImage>
       <Container>
+        <h1>Nikko A. Solon</h1>
+        <h2>About</h2>
+        <p>A skilled and detail-oriented software engineer with experience in developing and implementing software tools with hands-on manufacturing experience. Proficient in software development and automation tools, as well as Continuous Integration and Deployment (CI/CD) methodologies.</p>
         <h2>Contact</h2>
       </Container>
       {/* // background section
