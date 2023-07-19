@@ -199,6 +199,7 @@ Error generating stack: `+l.message+`
   border-radius: 50%;
 `,My=Ne.div`
   text-align: center;
+  padding: 3rem;
 `,Iy=Ne.div`
   position: relative;
   top: 0;
