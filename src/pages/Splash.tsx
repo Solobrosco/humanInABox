@@ -48,6 +48,7 @@ const TextOverlay = styled.div`
 
 const Container = styled.div`
   text-align: center;
+  padding: 3rem;
 `
 
 const FullScreenImage = styled.div`
