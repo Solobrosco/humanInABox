@@ -8,6 +8,7 @@ import { updateTitle } from "../utils/generalFunctions"
 
 // Components
 import Spinner from "../components/Spinner"
+import Gradient from "../components/Gradient"
 
 // Constants
 const TITLE = "Error: 418"
@@ -59,6 +60,7 @@ const Landing = () => {
           Splash
         </Button>
       </Link>
+      <Gradient></Gradient>
     </Container>
   )
 }
