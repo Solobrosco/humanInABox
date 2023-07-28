@@ -14,7 +14,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding-top: 1rem;
 `
 
 const Grade = styled.div`
