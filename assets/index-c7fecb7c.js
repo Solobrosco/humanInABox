@@ -95,7 +95,7 @@ Error generating stack: `+l.message+`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding-top: 1rem;
 `,my=Se.div`
   height: 5rem;
   width: 10rem;
