@@ -13,7 +13,7 @@ const Splash = () => {
   let author = "Nikko Solon"
   updateTitle(TITLE)
   return(
-    <>
+    <Background>
       <FullScreenImage>
         <Image src={background} alt="Yosemite View" />
         <TextOverlay>
@@ -29,11 +29,20 @@ const Splash = () => {
       {/* // background section
       // title quote
       // contacts */}
-    </>
+    </Background>
   )
 }
 
 export default Splash
+
+const Background = styled.div`
+  padding: 1rem;
+  margin: 1.2rem;
+  margin-bottom: 0rem;
+  background-color: #143314;
+  border-radius: 0.6%;
+  box-shadow: 2px -4px 4px rgb(21, 21, 21);
+`
 
 const TextOverlay = styled.div`
   text-align: center;
