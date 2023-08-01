@@ -41,8 +41,6 @@ const Landing = () => {
   return(
     <Container>
 
-      <h1>Oops...<br/> something went wrong</h1>
-
       <Grow onClick={handleClick}>
         <Spinner />
       </Grow>
