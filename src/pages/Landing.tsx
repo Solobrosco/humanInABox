@@ -58,6 +58,9 @@ const Landing = () => {
           Splash
         </Button>
       </Link>
+      <Link to={'todo/'}>
+        <Button>Todo</Button>
+      </Link>
       <Gradient></Gradient>
     </Container>
   )
