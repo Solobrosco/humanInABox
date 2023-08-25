@@ -20,23 +20,32 @@ const Login = () => {
     //   };
   return(
     <Container>
-      <h1>Hello!</h1>
-        <Form>
-          <Input
-            type="email"
-            name="email"
-            placeholder="email"
-          />
-          <Input
-            type="password"
-            name="password"
-            placeholder="password"
-          />
-          <Button>Submit</Button>
-        </Form>
-        <Wrapper>Don't have and account? 
-          <a href="#"> Signup here</a>
-        </Wrapper>
+      <Container>
+        <h1>Hello!</h1>
+          <StyledForm>
+            <StyledInput type="email" name="email" placeholder="email"/>
+            <StyledInput type="password" name="password" placeholder="password"/>
+            <StyledButton>Submit</StyledButton>
+          </StyledForm>
+          <StyledText>Don't have and account? 
+            <a href="#"> Signup here</a>
+          </StyledText>
+      </Container>
+      <Container>
+        <h2>More Form components</h2>
+        <StyledFieldSet>
+          <legend>Gender</legend>
+          <label >
+            <input type="radio" value='female' name="gender" />
+            Female
+          </label>
+          <label>
+            <input type="radio" value='male' name="gender" />
+            Male
+          </label>
+        </StyledFieldSet>
+        <StyledTextArea name='message'/>
+      </Container>
     </Container>
   )
 }
@@ -52,7 +61,35 @@ const jump = keyframes`
   }
 `
 
-const Wrapper = styled.div`
+const StyledTextArea = styled.textarea`
+  background-color: #eee;
+  width: 100%;
+  min-height: 100px;
+  resize: none;
+  color: black;
+
+`
+
+const StyledFieldSet = styled.fieldset`
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0;
+
+  legend {
+    padding: 0 10px;
+  }
+
+  label {
+    padding-right: 20px;
+  }
+
+  input {
+    margin-right: 10px;
+  }
+`
+
+const StyledText = styled.div`
   font-size: smaller;
   font-weight: lighter;
 `
@@ -64,7 +101,7 @@ const Container = styled.div`
   padding: 5rem;
 `
 
-const Form = styled.form`
+const StyledForm = styled.form`
   width: 100%;
   max-width: 414px;
   padding: 1.3rem;
@@ -73,7 +110,7 @@ const Form = styled.form`
   position: relative;
 `
 
-const Input = styled.input`
+const StyledInput = styled.input`
   max-width: 100%;
   padding: 11px 13px;
   background: #f9f9fa;
@@ -90,7 +127,7 @@ const Input = styled.input`
   }
 `
 
-const Button = styled.button`
+const StyledButton = styled.button`
   max-width: 100%;
   padding: 11px 13px;
   color: rgb(253, 249, 243);
